@@ -56,4 +56,9 @@ add_action( 'plugins_loaded', 'qp_bootstrap_plugin' );
 function qp_bootstrap_plugin() {
 	QP_i18n::load();
 	QP_Modules::boot();
+
+	if ( is_admin() ) {
+		require_once QP_PLUGIN_DIR . 'admin/class-qp-admin.php';
+		QP_Admin::init();
+	}
 }

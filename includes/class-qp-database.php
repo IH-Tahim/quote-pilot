@@ -528,6 +528,171 @@ if ( ! class_exists( 'QP_Database' ) ) :
 				)
 			);
 		}
+
+		/**
+		 * Insert a date rule.
+		 *
+		 * @param array $data Associative date rule data.
+		 * @return int|false ID of new row, or false.
+		 */
+		public static function insert_date_rule( $data ) {
+			global $wpdb;
+
+			$table = self::date_rules();
+			$result = $wpdb->insert(
+				$table,
+				array(
+					'rule_date'      => sanitize_text_field( $data['rule_date'] ),
+					'rule_type'      => sanitize_text_field( $data['rule_type'] ),
+					'surcharge_type' => sanitize_text_field( $data['surcharge_type'] ),
+					'surcharge_value'=> (float) $data['surcharge_value'],
+					'note'           => sanitize_text_field( $data['note'] ),
+				),
+				array( '%s', '%s', '%s', '%f', '%s' )
+			);
+
+			if ( false === $result ) {
+				return false;
+			}
+
+			return (int) $wpdb->insert_id;
+		}
+
+		/**
+		 * Delete a date rule.
+		 *
+		 * @param int $id Rule ID.
+		 * @return bool
+		 */
+		public static function delete_date_rule( $id ) {
+			global $wpdb;
+
+			$table = self::date_rules();
+			$result = $wpdb->delete(
+				$table,
+				array( 'id' => (int) $id ),
+				array( '%d' )
+			);
+
+			return false !== $result;
+		}
+
+		/**
+		 * Fetch all coupons from the database.
+		 *
+		 * @return array Array of row objects.
+		 */
+		public static function get_all_coupons() {
+			global $wpdb;
+
+			$table = self::coupons();
+
+			// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+			return $wpdb->get_results( "SELECT * FROM {$table} ORDER BY code ASC" );
+		}
+
+		/**
+		 * Insert a new coupon.
+		 *
+		 * @param array $data Coupon data.
+		 * @return int|false ID of new row, or false.
+		 */
+		public static function insert_coupon( $data ) {
+			global $wpdb;
+
+			$table = self::coupons();
+			$result = $wpdb->insert(
+				$table,
+				array(
+					'code'           => strtoupper( sanitize_text_field( $data['code'] ) ),
+					'discount_type'  => sanitize_text_field( $data['discount_type'] ),
+					'discount_value' => (float) $data['discount_value'],
+					'usage_limit'    => (int) $data['usage_limit'],
+					'usage_count'    => 0,
+					'expires_at'     => ! empty( $data['expires_at'] ) ? sanitize_text_field( $data['expires_at'] ) : null,
+					'active'         => ! empty( $data['active'] ) ? 1 : 0,
+				),
+				array( '%s', '%s', '%f', '%d', '%d', '%s', '%d' )
+			);
+
+			if ( false === $result ) {
+				return false;
+			}
+
+			return (int) $wpdb->insert_id;
+		}
+
+		/**
+		 * Update an existing coupon.
+		 *
+		 * @param int   $id   Coupon ID.
+		 * @param array $data Coupon data.
+		 * @return bool
+		 */
+		public static function update_coupon( $id, $data ) {
+			global $wpdb;
+
+			$table = self::coupons();
+			
+			$update = array();
+			$format = array();
+			
+			$map = array(
+				'code'           => '%s',
+				'discount_type'  => '%s',
+				'discount_value' => '%f',
+				'usage_limit'    => '%d',
+				'usage_count'    => '%d',
+				'expires_at'     => '%s',
+				'active'         => '%d',
+			);
+			
+			foreach ( $map as $col => $fmt ) {
+				if ( array_key_exists( $col, $data ) ) {
+					if ( 'code' === $col ) {
+						$update[ $col ] = strtoupper( sanitize_text_field( $data[ $col ] ) );
+					} elseif ( 'expires_at' === $col ) {
+						$update[ $col ] = ! empty( $data[ $col ] ) ? sanitize_text_field( $data[ $col ] ) : null;
+					} elseif ( 'discount_value' === $col ) {
+						$update[ $col ] = (float) $data[ $col ];
+					} elseif ( in_array( $col, array( 'usage_limit', 'usage_count', 'active' ), true ) ) {
+						$update[ $col ] = (int) $data[ $col ];
+					} else {
+						$update[ $col ] = sanitize_text_field( $data[ $col ] );
+					}
+					$format[] = $fmt;
+				}
+			}
+
+			$result = $wpdb->update(
+				$table,
+				$update,
+				array( 'id' => (int) $id ),
+				$format,
+				array( '%d' )
+			);
+
+			return false !== $result;
+		}
+
+		/**
+		 * Delete a coupon.
+		 *
+		 * @param int $id Coupon ID.
+		 * @return bool
+		 */
+		public static function delete_coupon( $id ) {
+			global $wpdb;
+
+			$table = self::coupons();
+			$result = $wpdb->delete(
+				$table,
+				array( 'id' => (int) $id ),
+				array( '%d' )
+			);
+
+			return false !== $result;
+		}
 	}
 
 endif;
