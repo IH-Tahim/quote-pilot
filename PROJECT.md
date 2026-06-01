@@ -36,6 +36,7 @@ Last updated: Keep this current · Current version: `v0.2.0-dev`
 - [x] **B-META — Resolve pricing-source gaps** — Closed pricing-source gaps (room-size tiers, repeatable add-ons, oven-size, emergency surcharge settings).
 - [x] **B2 — Authoritative Price Engine** — Implemented strict server-side calculation engine rounded to 2 decimals at each subtotal step. Handles unit multipliers (sqft, bedrooms, bathrooms, extra_bathrooms, living_rooms, stories, ovens), room size tiers, repeatable flat/percent add-ons, flat/percent surcharges, coupon states validation (expiry, limit checks), and GST/tax.
 - [x] **B3 — Conditional Logic Engine** — Created conditional show/hide rules evaluator supporting complex comparison operators (is, is_not, greater_than, less_than, contains, checked) with logical combinations (all/any) and default visibility. Filters field inputs directly into the price engine.
+- [x] **B4 — Mobile-First Form & Shortcode** — Created `[quotepilot_form]` shortcode and its mobile-first multi-step HTML/CSS wizard view. Incorporates accessible keyboard triggers, progress bar, dynamically resolved consent options, and a sticky summary footer in the mobile thumb zone. Scoped under HSL modern layout themes.
 
 ---
 
@@ -75,7 +76,7 @@ B-META [✅] ──> B2 [🔴] ──> B3 [🟡] ──> B4 [🟡] ──> B5 [�
 - [x] **B-META** Resolve pricing-source gaps (room-size tiers, repeatable add-ons, oven-size, emergency surcharge settings) — 🟡
 - [x] **B2** Authoritative PHP price engine ⛔ — 🔴
 - [x] **B3** Conditional show/hide logic — 🟡
-- [ ] **B4** Multi-step mobile-first form + shortcode — 🟡 *(Optional 🔴 design polish)* *blocks B5/B6*
+- [x] **B4** Multi-step mobile-first form + shortcode — 🟡
 - [ ] **B5** Secure submission handler (recalc + save + account opt-in + `qp_booking_created`) ⛔ — 🔴
 - [ ] **B6** Front-end JS (live preview mirror + wizard + lead capture) — 🟡
 - [ ] **B7** Consent-gated lead handler — 🟡
@@ -263,12 +264,13 @@ Before committing and declaring any part "Done":
 - **v0.1.0-dev** — Core foundation: tables, DB layer, Services CPT, helpers, module loader.
 - **v0.2.0-dev** — Canonical field contract (B0), module assets enqueue (B1), Git integration (G0), and pricing metadata settings (B-META) complete.
 - **v0.3.0-dev** — Authoritative server-side price calculation engine (B2) and field show/hide conditional logic evaluator (B3).
+- **v0.4.0-dev** — Mobile-first multi-step quote form CPT selectors, enqueued styles and shortcode templates (B4).
 
 ---
 
 ## ▶️ Resume Here
 
-**Next Action:** Run **B4 (Multi-step mobile-first form)** on **🟡 Pro**.
-**Last completed & tested:** B2 & B3 — Server-side calculation engine and show/hide rules evaluated, fully validated via unit tests, and pushed to remote main branch.
-**Waiting on me:** Initiate implementation of the mobile-first quote form and its custom shortcode (B4).
+**Next Action:** Run **B5 (Secure submission handler)** on **🔴 Opus**.
+**Last completed & tested:** B4 — Multi-step mobile-first form and shortcode implemented and verified with local test renderings.
+**Waiting on me:** Initiate implementation of the secure submission handler and booking/account creation pipeline (B5).
 **Review checkpoints ahead:** B5, C5, D2 — paste output to Claude before proceeding.
