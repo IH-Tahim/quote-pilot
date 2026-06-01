@@ -61,12 +61,9 @@ if ( ! class_exists( 'QP_Quote' ) ) :
 		public function __construct() {
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ) );
 
-			/*
-			 * Later B-blocks wire their components here, e.g.:
-			 *   QP_Shortcode, QP_Price_Engine, QP_Conditional,
-			 *   QP_Submission, QP_Leads.
-			 * Not loaded in B1.
-			 */
+			// Load and register Quote Form Shortcode (B4)
+			require_once QP_PLUGIN_DIR . 'modules/quote-calculator/class-qp-shortcode.php';
+			QP_Shortcode::register();
 		}
 
 		/**

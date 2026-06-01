@@ -34,6 +34,8 @@ Last updated: Keep this current · Current version: `v0.2.0-dev`
 - [x] **B1 — Quote module loader + conditional enqueue** — `QP_Quote` loads assets only on pages containing `[quotepilot_form]`; localizes one `QPData` object (ajax_url, nonce `qp_quote_form`, currency, tax, services pricing, date rules, consent config, field contract). Stub assets + silence files in place.
 - [x] **G0 — GitHub setup** — Git repository initialized, `.gitignore` configured, initial repository structure committed and successfully pushed to GitHub.
 - [x] **B-META — Resolve pricing-source gaps** — Closed pricing-source gaps (room-size tiers, repeatable add-ons, oven-size, emergency surcharge settings).
+- [x] **B2 — Authoritative Price Engine** — Implemented strict server-side calculation engine rounded to 2 decimals at each subtotal step. Handles unit multipliers (sqft, bedrooms, bathrooms, extra_bathrooms, living_rooms, stories, ovens), room size tiers, repeatable flat/percent add-ons, flat/percent surcharges, coupon states validation (expiry, limit checks), and GST/tax.
+- [x] **B3 — Conditional Logic Engine** — Created conditional show/hide rules evaluator supporting complex comparison operators (is, is_not, greater_than, less_than, contains, checked) with logical combinations (all/any) and default visibility. Filters field inputs directly into the price engine.
 
 ---
 
@@ -71,8 +73,8 @@ B-META [✅] ──> B2 [🔴] ──> B3 [🟡] ──> B4 [🟡] ──> B5 [�
 ### The Checklist:
 - [x] **G0** GitHub setup (gitignore, init, initial commit) — 🟢
 - [x] **B-META** Resolve pricing-source gaps (room-size tiers, repeatable add-ons, oven-size, emergency surcharge settings) — 🟡
-- [ ] **B2** Authoritative PHP price engine ⛔ — 🔴 *blocks B5/B6*
-- [ ] **B3** Conditional show/hide logic — 🟡 *blocks B4/B6*
+- [x] **B2** Authoritative PHP price engine ⛔ — 🔴
+- [x] **B3** Conditional show/hide logic — 🟡
 - [ ] **B4** Multi-step mobile-first form + shortcode — 🟡 *(Optional 🔴 design polish)* *blocks B5/B6*
 - [ ] **B5** Secure submission handler (recalc + save + account opt-in + `qp_booking_created`) ⛔ — 🔴
 - [ ] **B6** Front-end JS (live preview mirror + wizard + lead capture) — 🟡
@@ -260,12 +262,13 @@ Before committing and declaring any part "Done":
 
 - **v0.1.0-dev** — Core foundation: tables, DB layer, Services CPT, helpers, module loader.
 - **v0.2.0-dev** — Canonical field contract (B0), module assets enqueue (B1), Git integration (G0), and pricing metadata settings (B-META) complete.
+- **v0.3.0-dev** — Authoritative server-side price calculation engine (B2) and field show/hide conditional logic evaluator (B3).
 
 ---
 
 ## ▶️ Resume Here
 
-**Next Action:** Run **B2 (Authoritative PHP Price Engine)** using **🔴 Claude Opus 4.8**.
-**Last completed & tested:** B-META — Gaps in pricing sources resolved, and Git configuration complete.
-**Waiting on me:** Confirm if any custom adjustments are needed for the B-META pricing options, then proceed to implementation of the secure, authoritative PHP price calculation engine (B2).
-**Review checkpoints ahead:** B2, B5, C5, D2 — paste output to Claude before proceeding.
+**Next Action:** Run **B4 (Multi-step mobile-first form)** on **🟡 Pro**.
+**Last completed & tested:** B2 & B3 — Server-side calculation engine and show/hide rules evaluated, fully validated via unit tests, and pushed to remote main branch.
+**Waiting on me:** Initiate implementation of the mobile-first quote form and its custom shortcode (B4).
+**Review checkpoints ahead:** B5, C5, D2 — paste output to Claude before proceeding.

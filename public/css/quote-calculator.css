@@ -1,12 +1,614 @@
 /**
- * QuotePilot — quote calculator styles (stub).
+ * QuotePilot — Quote Calculator stylesheet.
  *
- * Filled in B4/B6 with the mobile-first multi-step form styling
- * (progress bar, option cards, sticky summary footer). Scoped under
- * .qp-quote-form so it never leaks into the host theme.
+ * Full mobile-first multi-step responsive styling.
+ * Scoped strictly under .qp-quote-form to protect theme styles.
  *
  * @package QuotePilot
  */
+
+/* 1. Scoped CSS Variable System */
 .qp-quote-form {
-	/* B4/B6: layout, steps, cards, summary. */
+	--qp-primary: #6366f1;
+	--qp-primary-hover: #4f46e5;
+	--qp-primary-light: #eef2ff;
+	--qp-secondary: #0ea5e9;
+	--qp-secondary-hover: #0284c7;
+	--qp-text: #334155;
+	--qp-text-light: #64748b;
+	--qp-bg-card: #ffffff;
+	--qp-bg-form: #f8fafc;
+	--qp-border: #e2e8f0;
+	--qp-border-hover: #cbd5e1;
+	--qp-border-active: #c7d2fe;
+	--qp-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	--qp-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+	--qp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+	--qp-radius: 12px;
+	--qp-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	
+	font-family: var(--qp-font);
+	color: var(--qp-text);
+	background: var(--qp-bg-form);
+	border: 1px solid var(--qp-border);
+	border-radius: var(--qp-radius);
+	padding: 20px;
+	box-shadow: var(--qp-shadow-lg);
+	max-width: 600px;
+	margin: 20px auto;
+	box-sizing: border-box;
+	position: relative;
+	padding-bottom: 120px; /* Space for the sticky summary footer */
+}
+
+.qp-quote-form * {
+	box-sizing: border-box;
+}
+
+/* 2. Wizard Header & Progress Bar */
+.qp-wizard-header {
+	margin-bottom: 24px;
+}
+
+.qp-progress-wrapper {
+	height: 6px;
+	background: var(--qp-border);
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+
+.qp-progress-bar {
+	height: 100%;
+	width: 20%; /* Step 1 default */
+	background: linear-gradient(90deg, var(--qp-primary) 0%, var(--qp-secondary) 100%);
+	border-radius: 3px;
+	transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qp-steps-indicator {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+
+.qp-step-dot {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: var(--qp-bg-card);
+	border: 2px solid var(--qp-border);
+	color: var(--qp-text-light);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: 600;
+	transition: all 0.25s ease;
+	position: relative;
+	z-index: 2;
+}
+
+.qp-step-dot.active {
+	border-color: var(--qp-primary);
+	background: var(--qp-primary);
+	color: #ffffff;
+	box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.qp-step-dot.completed {
+	border-color: var(--qp-secondary);
+	background: var(--qp-secondary);
+	color: #ffffff;
+}
+
+.qp-step-line {
+	flex-grow: 1;
+	height: 2px;
+	background: var(--qp-border);
+	margin: 0 -5px;
+	position: relative;
+	z-index: 1;
+}
+
+.qp-step-title {
+	font-size: 20px;
+	font-weight: 700;
+	color: #0f172a;
+	margin: 0 0 8px;
+}
+
+.qp-step-intro {
+	font-size: 13px;
+	color: var(--qp-text-light);
+	margin-top: 0;
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+
+/* 3. Steps Management */
+.qp-step {
+	display: none;
+	animation: qpFadeIn 0.35s ease forwards;
+}
+
+.qp-step.active {
+	display: block;
+}
+
+@keyframes qpFadeIn {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* 4. Option Cards (Big Touch Targets) */
+.qp-cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.qp-option-card {
+	background: var(--qp-bg-card);
+	border: 1px solid var(--qp-border);
+	border-radius: var(--qp-radius);
+	padding: 16px;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: var(--qp-shadow-sm);
+	min-height: 120px;
+}
+
+.qp-option-card:hover {
+	border-color: var(--qp-border-hover);
+	transform: translateY(-2px);
+	box-shadow: var(--qp-shadow-md);
+}
+
+.qp-option-card.selected {
+	border-color: var(--qp-primary);
+	background: var(--qp-primary-light);
+	box-shadow: 0 0 0 1px var(--qp-primary), var(--qp-shadow-md);
+}
+
+.qp-radio-input, .qp-checkbox-input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.qp-card-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.qp-card-icon {
+	color: var(--qp-primary);
+	margin-bottom: 12px;
+}
+
+.qp-card-icon .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.qp-card-title {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1e293b;
+	margin: 0 0 10px;
+}
+
+.qp-card-price {
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.qp-price-label {
+	font-size: 10px;
+	color: var(--qp-text-light);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.qp-price-amount {
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--qp-primary-hover);
+}
+
+.qp-option-card.selected .qp-price-amount {
+	color: var(--qp-primary-hover);
+}
+
+/* Small Cards (Option Rows) */
+.qp-cards-row {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.qp-option-card-small {
+	flex: 1;
+	background: var(--qp-bg-card);
+	border: 1px solid var(--qp-border);
+	border-radius: 8px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 500;
+	transition: all 0.15s ease;
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.qp-option-card-small:hover {
+	border-color: var(--qp-border-hover);
+}
+
+.qp-option-card-small.selected {
+	border-color: var(--qp-primary);
+	background: var(--qp-primary-light);
+	font-weight: 600;
+	color: var(--qp-primary-hover);
+}
+
+/* Repeatable Addons Cards */
+.qp-addons-cards-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.qp-addon-card {
+	background: var(--qp-bg-card);
+	border: 1px solid var(--qp-border);
+	border-radius: 8px;
+	padding: 12px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	min-height: 48px;
+}
+
+.qp-addon-card:hover {
+	border-color: var(--qp-border-hover);
+}
+
+.qp-addon-card.selected {
+	border-color: var(--qp-primary);
+	background: var(--qp-primary-light);
+}
+
+.qp-addon-card-left {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.qp-addon-card-label {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.qp-addon-card-price {
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--qp-text-light);
+}
+
+.qp-addon-card.selected .qp-addon-card-price {
+	color: var(--qp-primary-hover);
+}
+
+.qp-addon-card-checkbox {
+	width: 18px;
+	height: 18px;
+	border: 2px solid var(--qp-border);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.15s ease;
+}
+
+.qp-addon-card.selected .qp-addon-card-checkbox {
+	border-color: var(--qp-primary);
+	background: var(--qp-primary);
+}
+
+.qp-addon-card.selected .qp-addon-card-checkbox::after {
+	content: "\f147";
+	font-family: dashicons;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+/* 5. Inputs & Labels Layout */
+.qp-form-section {
+	margin-bottom: 20px;
+}
+
+.qp-form-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	gap: 12px;
+}
+
+.qp-field-label {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--qp-text-light);
+	margin-bottom: 8px;
+}
+
+.qp-input-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.qp-text-input, .qp-number-input, .qp-select-input, .qp-textarea-input, .qp-date-input, .qp-coupon-input {
+	width: 100%;
+	padding: 10px 14px;
+	border: 1px solid var(--qp-border);
+	border-radius: 8px;
+	font-size: 14px;
+	color: var(--qp-text);
+	background: #ffffff;
+	transition: all 0.15s ease;
+	outline: none;
+	min-height: 44px;
+}
+
+.qp-text-input:focus, .qp-number-input:focus, .qp-select-input:focus, .qp-textarea-input:focus, .qp-date-input:focus, .qp-coupon-input:focus {
+	border-color: var(--qp-primary);
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.qp-input-suffix {
+	position: absolute;
+	right: 14px;
+	font-size: 12px;
+	color: var(--qp-text-light);
+	pointer-events: none;
+}
+
+.qp-textarea-input {
+	resize: vertical;
+}
+
+/* Stylized Checkboxes */
+.qp-checkbox-label {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.qp-checkbox-styled {
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--qp-border);
+	border-radius: 6px;
+	flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.15s ease;
+	background: #ffffff;
+	margin-top: 2px;
+}
+
+.qp-checkbox-input:checked + .qp-checkbox-styled {
+	border-color: var(--qp-primary);
+	background: var(--qp-primary);
+}
+
+.qp-checkbox-input:checked + .qp-checkbox-styled::after {
+	content: "\f147";
+	font-family: dashicons;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.qp-checkbox-text {
+	font-size: 13px;
+	line-height: 1.5;
+	color: var(--qp-text);
+}
+
+.qp-required-mark {
+	color: #ef4444;
+}
+
+/* Coupon Integration Row */
+.qp-coupon-row {
+	display: flex;
+	gap: 8px;
+}
+
+.qp-coupon-btn {
+	background: var(--qp-primary-light);
+	color: var(--qp-primary-hover);
+	border: 1px solid var(--qp-border-active);
+	border-radius: 8px;
+	padding: 0 16px;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	min-height: 44px;
+}
+
+.qp-coupon-btn:hover {
+	background: var(--qp-primary);
+	color: #ffffff;
+	border-color: var(--qp-primary);
+}
+
+.qp-coupon-message {
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 6px;
+	display: none;
+}
+
+.qp-coupon-message.success {
+	color: #10b981;
+}
+
+.qp-coupon-message.error {
+	color: #ef4444;
+}
+
+/* 6. Sticky Summary Footer (Thumb Zone) */
+.qp-summary-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(8px);
+	border-top: 1px solid var(--qp-border);
+	border-bottom-left-radius: var(--qp-radius);
+	border-bottom-right-radius: var(--qp-radius);
+	padding: 16px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
+	z-index: 10;
+}
+
+.qp-summary-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.qp-summary-service {
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--qp-text-light);
+	letter-spacing: 0.05em;
+	max-width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.qp-summary-price {
+	display: flex;
+	align-items: baseline;
+	gap: 6px;
+}
+
+.qp-summary-amount {
+	font-size: 22px;
+	font-weight: 800;
+	color: #0f172a;
+}
+
+.qp-summary-tax-label {
+	font-size: 10px;
+	color: var(--qp-text-light);
+}
+
+.qp-summary-actions {
+	display: flex;
+	gap: 8px;
+}
+
+.qp-nav-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 46px;
+	border-radius: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	outline: none;
+}
+
+.qp-btn-back {
+	background: #ffffff;
+	border: 1px solid var(--qp-border);
+	color: var(--qp-text);
+	width: 46px;
+}
+
+.qp-btn-back:hover {
+	background: var(--qp-bg-form);
+	border-color: var(--qp-border-hover);
+}
+
+.qp-btn-next {
+	background: var(--qp-primary);
+	border: 1px solid var(--qp-primary);
+	color: #ffffff;
+	padding: 0 18px;
+	gap: 6px;
+}
+
+.qp-btn-next:hover {
+	background: var(--qp-primary-hover);
+	border-color: var(--qp-primary-hover);
+}
+
+/* 7. Error Alert Banner */
+.qp-form-errors-alert {
+	background: #fef2f2;
+	border: 1px solid #fee2e2;
+	border-radius: 8px;
+	color: #991b1b;
+	padding: 12px 16px;
+	font-size: 13px;
+	font-weight: 500;
+	margin-top: 20px;
+	line-height: 1.4;
+}
+
+/* 8. Accessibility Outlines */
+.qp-nav-btn:focus-visible, .qp-option-card:focus-within, .qp-option-card-small:focus-within {
+	outline: 2px solid var(--qp-primary);
+	outline-offset: 2px;
+}
+
+/* 9. Responsive Adjustments */
+@media (max-width: 480px) {
+	.qp-quote-form {
+		margin: 0;
+		border-radius: 0;
+		border: none;
+		max-width: 100%;
+		padding: 16px;
+		padding-bottom: 120px;
+	}
+	
+	.qp-summary-footer {
+		position: fixed;
+		bottom: 0;
+		border-radius: 0;
+	}
 }
