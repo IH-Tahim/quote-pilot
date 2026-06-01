@@ -1,0 +1,12 @@
+/**
+ * QuotePilot — quote calculator styles (stub).
+ *
+ * Filled in B4/B6 with the mobile-first multi-step form styling
+ * (progress bar, option cards, sticky summary footer). Scoped under
+ * .qp-quote-form so it never leaks into the host theme.
+ *
+ * @package QuotePilot
+ */
+.qp-quote-form {
+	/* B4/B6: layout, steps, cards, summary. */
+}

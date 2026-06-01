@@ -1,0 +1,17 @@
+# Ignore dependencies
+node_modules/
+vendor/
+
+# Ignore log files
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore environment & secret keys
+.env
+.env.*
+*.key
+local-config.php
+secret-config.php
