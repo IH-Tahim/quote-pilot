@@ -66,6 +66,14 @@ if ( ! class_exists( 'QP_Modules' ) ) :
 				QP_Notifications::init();
 			}
 
+			/*--------------------------------------------------------------
+			 * Payments module (Stripe + PayPal, optional).
+			 *------------------------------------------------------------*/
+			if ( ! empty( $enabled_modules['payments'] ) ) {
+				require_once QP_PLUGIN_DIR . 'modules/payments/class-qp-payments.php';
+				QP_Payments::init();
+			}
+
 			/*
 			 * Future module loading:
 			 *
@@ -87,14 +95,6 @@ if ( ! class_exists( 'QP_Modules' ) ) :
 			 *
 			 * if ( ! empty( $enabled_modules['date_rules'] ) ) {
 			 *     require_once QP_PLUGIN_DIR . 'modules/date-rules/class-qp-date-rules.php';
-			 * }
-			 *
-			 * if ( ! empty( $enabled_modules['payments'] ) ) {
-			 *     require_once QP_PLUGIN_DIR . 'modules/payments/class-qp-payments.php';
-			 * }
-			 *
-			 * if ( ! empty( $enabled_modules['email_notifications'] ) ) {
-			 *     require_once QP_PLUGIN_DIR . 'modules/email-notifications/class-qp-email-notifications.php';
 			 * }
 			 */
 		}

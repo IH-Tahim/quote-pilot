@@ -250,6 +250,12 @@ if ( ! class_exists( 'QP_Submission' ) ) :
 			 *--------------------------------------------------------*/
 			$amount_due = self::amount_due( (float) $price['total'], $payment_mode );
 
+			// Resolve gateway availability for the front-end.
+			$available_gateways = array();
+			if ( class_exists( 'QP_Payments' ) && $amount_due > 0 ) {
+				$available_gateways = QP_Payments::get_available_gateways();
+			}
+
 			wp_send_json_success(
 				array(
 					'booking_id' => (int) $booking_id,
@@ -264,10 +270,11 @@ if ( ! class_exists( 'QP_Submission' ) ) :
 						'total_formatted' => QP_Helpers::format_money( $price['total'] ),
 					),
 					'payment'    => array(
-						'mode'       => $payment_mode,
-						'status'     => 'unpaid',
-						'amount_due' => $amount_due,
-						'next_step'  => ( $amount_due > 0 ) ? 'payment' : 'confirmation',
+						'mode'               => $payment_mode,
+						'status'             => 'unpaid',
+						'amount_due'         => $amount_due,
+						'next_step'          => ( $amount_due > 0 && ! empty( $available_gateways ) ) ? 'payment' : 'confirmation',
+						'available_gateways' => $available_gateways,
 					),
 				)
 			);
@@ -393,13 +400,34 @@ if ( ! class_exists( 'QP_Submission' ) ) :
 		/**
 		 * Resolve the payment mode for a booking.
 		 *
+		 * Maps settings-page naming conventions (hyphenated) to the
+		 * canonical internal values (underscored). Falls back to 'none'
+		 * for unrecognised values.
+		 *
 		 * @param int $service_id The service ID.
 		 * @return string One of full_advance|half_advance|pay_after|none.
 		 */
 		private static function resolve_payment_mode( $service_id ) {
 			$valid = array( 'full_advance', 'half_advance', 'pay_after', 'none' );
 
-			$mode = QP_Helpers::get_setting( 'default_payment_mode', 'none' );
+			// Settings page stores hyphenated values; map them.
+			$aliases = array(
+				'pay-after'    => 'pay_after',
+				'deposit-half' => 'half_advance',
+				'deposit-full' => 'full_advance',
+			);
+
+			$mode = QP_Helpers::get_setting( 'default_payment_mode', '' );
+
+			// Fallback to the 'payment_mode' key used by the settings page.
+			if ( empty( $mode ) ) {
+				$mode = QP_Helpers::get_setting( 'payment_mode', 'none' );
+			}
+
+			// Normalise alias.
+			if ( isset( $aliases[ $mode ] ) ) {
+				$mode = $aliases[ $mode ];
+			}
 
 			/**
 			 * Filter the payment mode chosen for a new booking.

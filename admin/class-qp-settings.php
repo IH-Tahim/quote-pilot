@@ -97,12 +97,16 @@ if ( ! class_exists( 'QP_Settings' ) ) :
 			$privacy_url     = isset( $_POST['privacy_url'] ) ? esc_url_raw( wp_unslash( $_POST['privacy_url'] ) ) : '';
 
 			// 5. PAYMENTS & MASKED GATEWAY KEYS
-			$payment_mode = isset( $_POST['payment_mode'] ) ? sanitize_text_field( wp_unslash( $_POST['payment_mode'] ) ) : 'pay-after';
+			$payment_mode  = isset( $_POST['payment_mode'] ) ? sanitize_text_field( wp_unslash( $_POST['payment_mode'] ) ) : 'pay-after';
+			$currency_code = isset( $_POST['currency_code'] ) ? sanitize_text_field( wp_unslash( $_POST['currency_code'] ) ) : '';
 
-			$stripe_secret   = isset( $_POST['stripe_secret_key'] ) ? sanitize_text_field( wp_unslash( $_POST['stripe_secret_key'] ) ) : '';
-			$stripe_publish  = isset( $_POST['stripe_publishable_key'] ) ? sanitize_text_field( wp_unslash( $_POST['stripe_publishable_key'] ) ) : '';
-			$paypal_client   = isset( $_POST['paypal_client_id'] ) ? sanitize_text_field( wp_unslash( $_POST['paypal_client_id'] ) ) : '';
-			$paypal_secret   = isset( $_POST['paypal_secret'] ) ? sanitize_text_field( wp_unslash( $_POST['paypal_secret'] ) ) : '';
+			$stripe_secret         = isset( $_POST['stripe_secret_key'] ) ? sanitize_text_field( wp_unslash( $_POST['stripe_secret_key'] ) ) : '';
+			$stripe_publish        = isset( $_POST['stripe_publishable_key'] ) ? sanitize_text_field( wp_unslash( $_POST['stripe_publishable_key'] ) ) : '';
+			$stripe_webhook_secret = isset( $_POST['stripe_webhook_secret'] ) ? sanitize_text_field( wp_unslash( $_POST['stripe_webhook_secret'] ) ) : '';
+			$paypal_client         = isset( $_POST['paypal_client_id'] ) ? sanitize_text_field( wp_unslash( $_POST['paypal_client_id'] ) ) : '';
+			$paypal_secret         = isset( $_POST['paypal_secret'] ) ? sanitize_text_field( wp_unslash( $_POST['paypal_secret'] ) ) : '';
+			$paypal_webhook_id     = isset( $_POST['paypal_webhook_id'] ) ? sanitize_text_field( wp_unslash( $_POST['paypal_webhook_id'] ) ) : '';
+			$paypal_mode           = isset( $_POST['paypal_mode'] ) ? sanitize_text_field( wp_unslash( $_POST['paypal_mode'] ) ) : 'sandbox';
 
 			// Check if keys are masked; if so, restore from existing options database
 			if ( strpos( $stripe_secret, '•••' ) !== false ) {
@@ -111,17 +115,24 @@ if ( ! class_exists( 'QP_Settings' ) ) :
 			if ( strpos( $stripe_publish, '•••' ) !== false ) {
 				$stripe_publish = isset( $existing['stripe_publishable_key'] ) ? $existing['stripe_publishable_key'] : '';
 			}
+			if ( strpos( $stripe_webhook_secret, '•••' ) !== false ) {
+				$stripe_webhook_secret = isset( $existing['stripe_webhook_secret'] ) ? $existing['stripe_webhook_secret'] : '';
+			}
 			if ( strpos( $paypal_client, '•••' ) !== false ) {
 				$paypal_client = isset( $existing['paypal_client_id'] ) ? $existing['paypal_client_id'] : '';
 			}
 			if ( strpos( $paypal_secret, '•••' ) !== false ) {
 				$paypal_secret = isset( $existing['paypal_secret'] ) ? $existing['paypal_secret'] : '';
 			}
+			if ( strpos( $paypal_webhook_id, '•••' ) !== false ) {
+				$paypal_webhook_id = isset( $existing['paypal_webhook_id'] ) ? $existing['paypal_webhook_id'] : '';
+			}
 
 			// Clean Settings Object
 			$settings_payload = array(
 				'enabled_modules'             => $sanitized_modules,
 				'currency_symbol'             => $currency_symbol,
+				'currency_code'               => $currency_code,
 				'tax_enabled'                 => $tax_enabled,
 				'tax_rate'                    => $tax_rate,
 				'emergency_surcharge_enabled' => $emergency_surcharge_enabled,
@@ -133,9 +144,12 @@ if ( ! class_exists( 'QP_Settings' ) ) :
 				'payment_mode'                => $payment_mode,
 				'stripe_secret_key'           => $stripe_secret,
 				'stripe_publishable_key'      => $stripe_publish,
+				'stripe_webhook_secret'       => $stripe_webhook_secret,
 				'paypal_client_id'            => $paypal_client,
 				'paypal_secret'               => $paypal_secret,
-				'qp_delete_data_on_uninstall'  => ! empty( $_POST['qp_delete_data_on_uninstall'] ),
+				'paypal_webhook_id'           => $paypal_webhook_id,
+				'paypal_mode'                 => $paypal_mode,
+				'qp_delete_data_on_uninstall' => ! empty( $_POST['qp_delete_data_on_uninstall'] ),
 			);
 
 			update_option( 'qp_settings', $settings_payload );
@@ -165,10 +179,14 @@ if ( ! class_exists( 'QP_Settings' ) ) :
 			$terms_url                   = isset( $settings['terms_url'] ) ? $settings['terms_url'] : '';
 			$privacy_url                 = isset( $settings['privacy_url'] ) ? $settings['privacy_url'] : '';
 			$payment_mode                = isset( $settings['payment_mode'] ) ? $settings['payment_mode'] : 'pay-after';
+			$currency_code               = isset( $settings['currency_code'] ) ? $settings['currency_code'] : '';
 			$stripe_secret               = isset( $settings['stripe_secret_key'] ) ? $settings['stripe_secret_key'] : '';
 			$stripe_publish              = isset( $settings['stripe_publishable_key'] ) ? $settings['stripe_publishable_key'] : '';
+			$stripe_webhook_secret       = isset( $settings['stripe_webhook_secret'] ) ? $settings['stripe_webhook_secret'] : '';
 			$paypal_client               = isset( $settings['paypal_client_id'] ) ? $settings['paypal_client_id'] : '';
 			$paypal_secret               = isset( $settings['paypal_secret'] ) ? $settings['paypal_secret'] : '';
+			$paypal_webhook_id           = isset( $settings['paypal_webhook_id'] ) ? $settings['paypal_webhook_id'] : '';
+			$paypal_mode                 = isset( $settings['paypal_mode'] ) ? $settings['paypal_mode'] : 'sandbox';
 			$delete_on_uninstall         = ! empty( $settings['qp_delete_data_on_uninstall'] );
 			?>
 			<div class="wrap">
@@ -365,27 +383,81 @@ if ( ! class_exists( 'QP_Settings' ) ) :
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="stripe_publishable_key"><?php esc_html_e( 'Stripe Publishable Key', 'quote-pilot' ); ?></label></th>
+								<th scope="row"><label for="currency_code"><?php esc_html_e( 'Currency Code (ISO 4217)', 'quote-pilot' ); ?></label></th>
+								<td>
+									<input type="text" id="currency_code" name="currency_code" class="small-text" value="<?php echo esc_attr( $currency_code ); ?>" placeholder="USD" maxlength="3" />
+									<p class="description"><?php esc_html_e( '3-letter code (e.g. USD, GBP, EUR, AUD). Used by Stripe & PayPal. Leave blank to auto-detect from symbol.', 'quote-pilot' ); ?></p>
+								</td>
+							</tr>
+						</table>
+
+						<h3 style="margin-top: 20px; padding-top: 10px; border-top: 1px solid #ddd;"><?php esc_html_e( 'Stripe', 'quote-pilot' ); ?></h3>
+						<table class="form-table" role="presentation">
+							<tr>
+								<th scope="row"><label for="stripe_publishable_key"><?php esc_html_e( 'Publishable Key', 'quote-pilot' ); ?></label></th>
 								<td>
 									<input type="text" id="stripe_publishable_key" name="stripe_publishable_key" class="regular-text" value="<?php echo esc_attr( self::mask_key( $stripe_publish ) ); ?>" />
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="stripe_secret_key"><?php esc_html_e( 'Stripe Secret Key', 'quote-pilot' ); ?></label></th>
+								<th scope="row"><label for="stripe_secret_key"><?php esc_html_e( 'Secret Key', 'quote-pilot' ); ?></label></th>
 								<td>
 									<input type="text" id="stripe_secret_key" name="stripe_secret_key" class="regular-text" value="<?php echo esc_attr( self::mask_key( $stripe_secret ) ); ?>" />
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="paypal_client_id"><?php esc_html_e( 'PayPal Client ID', 'quote-pilot' ); ?></label></th>
+								<th scope="row"><label for="stripe_webhook_secret"><?php esc_html_e( 'Webhook Signing Secret', 'quote-pilot' ); ?></label></th>
+								<td>
+									<input type="text" id="stripe_webhook_secret" name="stripe_webhook_secret" class="regular-text" value="<?php echo esc_attr( self::mask_key( $stripe_webhook_secret ) ); ?>" />
+									<p class="description">
+										<?php
+										printf(
+											/* translators: %s: webhook endpoint URL */
+											esc_html__( 'Starts with whsec_. Set your Stripe webhook endpoint to: %s', 'quote-pilot' ),
+											'<code>' . esc_html( admin_url( 'admin-ajax.php?action=qp_stripe_webhook' ) ) . '</code>'
+										);
+										?>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+						<h3 style="margin-top: 20px; padding-top: 10px; border-top: 1px solid #ddd;"><?php esc_html_e( 'PayPal', 'quote-pilot' ); ?></h3>
+						<table class="form-table" role="presentation">
+							<tr>
+								<th scope="row"><label for="paypal_mode"><?php esc_html_e( 'Environment', 'quote-pilot' ); ?></label></th>
+								<td>
+									<select id="paypal_mode" name="paypal_mode">
+										<option value="sandbox" <?php selected( 'sandbox', $paypal_mode ); ?>><?php esc_html_e( 'Sandbox (Testing)', 'quote-pilot' ); ?></option>
+										<option value="live" <?php selected( 'live', $paypal_mode ); ?>><?php esc_html_e( 'Live (Production)', 'quote-pilot' ); ?></option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="paypal_client_id"><?php esc_html_e( 'Client ID', 'quote-pilot' ); ?></label></th>
 								<td>
 									<input type="text" id="paypal_client_id" name="paypal_client_id" class="regular-text" value="<?php echo esc_attr( self::mask_key( $paypal_client ) ); ?>" />
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="paypal_secret"><?php esc_html_e( 'PayPal Client Secret', 'quote-pilot' ); ?></label></th>
+								<th scope="row"><label for="paypal_secret"><?php esc_html_e( 'Client Secret', 'quote-pilot' ); ?></label></th>
 								<td>
 									<input type="text" id="paypal_secret" name="paypal_secret" class="regular-text" value="<?php echo esc_attr( self::mask_key( $paypal_secret ) ); ?>" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="paypal_webhook_id"><?php esc_html_e( 'Webhook ID', 'quote-pilot' ); ?></label></th>
+								<td>
+									<input type="text" id="paypal_webhook_id" name="paypal_webhook_id" class="regular-text" value="<?php echo esc_attr( self::mask_key( $paypal_webhook_id ) ); ?>" />
+									<p class="description">
+										<?php
+										printf(
+											/* translators: %s: webhook endpoint URL */
+											esc_html__( 'From your PayPal Developer Dashboard. Set webhook URL to: %s', 'quote-pilot' ),
+											'<code>' . esc_html( admin_url( 'admin-ajax.php?action=qp_paypal_webhook' ) ) . '</code>'
+										);
+										?>
+									</p>
 								</td>
 							</tr>
 						</table>

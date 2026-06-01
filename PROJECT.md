@@ -87,7 +87,7 @@ B-META [✅] ──> B2 [🔴] ──> B3 [🟡] ──> B4 [🟡] ──> B5 [�
 - [x] **C2** Admin: settings, bookings list table, single-booking, branding — 🟡
 - [x] **C3** Date-rules calendar + coupons admin — 🟢
 - [x] **C4** Notifications: email + WhatsApp click-to-chat + webhook/Mailchimp/Brevo — 🟡
-- [ ] **C5** Payments: optional Stripe/PayPal, deposit modes, verified webhooks ⛔ — 🔴
+- [x] **C5** Payments: optional Stripe/PayPal, deposit modes, verified webhooks ⛔ — 🔴
 - [ ] **D1** Readme.txt + i18n .pot + safe uninstall ⫶ — 🟢 *(Parallel-safe)*
 - [ ] **D2** Final audit (security + performance + WP.org compliance) ⛔ — 🔴
 - [ ] 🏁 **RELEASE** → Tag `v1.0.0`, submit to WordPress.org
@@ -271,12 +271,13 @@ Before committing and declaring any part "Done":
 - **v0.4.2-dev** — Front-end JS (B6): live price preview (mirrors PHP pipeline exactly), multi-step wizard with inline validation, AJAX submit with server confirmation panel, consent-gated lead-capture debounced POST. Verified: preview $245.00 == PHP engine, browser fake ignored, B1 asset-loading guarantee intact.
 - **v0.5.0-quote-engine** — Consent-gated partial lead capture (B7) with custom db upserts and booking convert flipping hooks. Wired and tagged primary milestone checkpoint.
 - **v0.6.0-dev** — Customer accounts registration/login & linking linkage (C1), Admin options settings screens & list-tables (C2), Surcharge calendar & coupon rules CRUD (C3), Outbound transactional emails, wa.me links, & Mailchimp CRM webhooks (C4).
+- **v0.7.0-dev** — Optional payments module (C5): Stripe Checkout Sessions + PayPal Orders API v2 via raw REST calls (zero SDK dependencies). Payment router with deposit modes (full/half/pay-after), HMAC-SHA256 Stripe webhook verification, PayPal server-side webhook verification API, idempotent payment recording, sandbox/live toggle, and currency code mapping. Settings page extended with webhook secrets and PayPal environment toggle. Submission handler updated with payment mode alias normalisation and gateway availability in responses. Verified 42/42 CLI assertions: amount computation, mode normalisation, gateway detection, needs_payment logic, idempotent recording, Stripe signature verification (valid + tampered + wrong-secret + stale + empty), and currency unit conversion.
 
 ---
 
 ## ▶️ Resume Here
 
-**Next Action:** Run **C5 (Payments Integration - Stripe/PayPal)** on **🔴 Opus**.
-**Last completed & tested:** B7 to C4 — Consent-gated lead handler, customer accounts dashboard with linkage backfills, admin settings, list tables, color branding customizer, surcharge/coupon rules CRUD, email/WhatsApp notifications and outgoing webhooks. All verified using dedicated CLI test suites.
-**Waiting on me:** Build C5 Payments Router and secret signature webhooks validation.
-**Review checkpoints ahead:** C5, D2 — paste output to Claude before proceeding.
+**Next Action:** Run **D1 (Readme, i18n .pot, Uninstall)** on **🟢 Fast** and then **D2 (Final Audit)** on **🔴 Opus**.
+**Last completed & tested:** C5 — Optional payments module with Stripe Checkout Sessions, PayPal Orders API v2, webhook signature verification, idempotent recording, and settings page extensions. All verified using 42-assertion CLI test suite.
+**Waiting on me:** Build D1 readme/i18n/uninstall scaffolding, then D2 final security+performance audit.
+**Review checkpoints ahead:** D2 — paste output to Claude before tagging v1.0.0.
