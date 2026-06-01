@@ -102,6 +102,22 @@ if ( ! class_exists( 'QP_Fields' ) ) :
 					'options'          => array( '1', '2', '3' ),
 					'service_meta_key' => 'price_per_story',
 				),
+				'room_size'         => array(
+					'label'            => __( 'Room Size Tier', 'quote-pilot' ),
+					'input_type'       => 'radio',
+					'sanitize'         => 'text',
+					'pricing_role'     => 'multiplier',
+					'options'          => array( 'small', 'medium', 'large' ),
+					'service_meta_key' => 'room_size_multipliers',
+				),
+				'living_room_size'  => array(
+					'label'            => __( 'Living Room Size Tier', 'quote-pilot' ),
+					'input_type'       => 'radio',
+					'sanitize'         => 'text',
+					'pricing_role'     => 'multiplier',
+					'options'          => array( 'small', 'medium', 'large' ),
+					'service_meta_key' => 'living_room_size_multipliers',
+				),
 
 				/*------------------------------------------------------
 				 * Oven cleaning (count is priced; size is a modifier).
