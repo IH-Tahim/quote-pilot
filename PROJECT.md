@@ -37,6 +37,7 @@ Last updated: Keep this current · Current version: `v0.2.0-dev`
 - [x] **B2 — Authoritative Price Engine** — Implemented strict server-side calculation engine rounded to 2 decimals at each subtotal step. Handles unit multipliers (sqft, bedrooms, bathrooms, extra_bathrooms, living_rooms, stories, ovens), room size tiers, repeatable flat/percent add-ons, flat/percent surcharges, coupon states validation (expiry, limit checks), and GST/tax.
 - [x] **B3 — Conditional Logic Engine** — Created conditional show/hide rules evaluator supporting complex comparison operators (is, is_not, greater_than, less_than, contains, checked) with logical combinations (all/any) and default visibility. Filters field inputs directly into the price engine.
 - [x] **B4 — Mobile-First Form & Shortcode** — Created `[quotepilot_form]` shortcode and its mobile-first multi-step HTML/CSS wizard view. Incorporates accessible keyboard triggers, progress bar, dynamically resolved consent options, and a sticky summary footer in the mobile thumb zone. Scoped under HSL modern layout themes.
+- [x] **B5 — Secure Submission Handler** — `QP_Submission` (AJAX `qp_submit`/`nopriv`). Nonce-first pipeline → sanitize via contract → validate service/email/consent (consent_data proof JSON w/ timestamp+IP) → conditional `evaluate()` → **server recalc via `QP_Price_Engine` (browser total ignored)** → `insert_booking` + `insert_booking_items` → coupon increment on success → guest `user_id=0` or `qp_customer` account opt-in → fires `qp_booking_created` seam. Conditional rules sourced via `qp_conditional_rules` filter (empty = all visible). **Verified end-to-end on the live DB: 16/16 assertions pass** — stored total == engine total (200.00, not the browser's 9.99), hidden oven field excluded (saved $120), guest user_id=0, account opt-in creates qp_customer, valid coupon 10% → 180.00 w/ usage incremented once, expired coupon rejected + no booking saved.
 
 ---
 
@@ -77,7 +78,7 @@ B-META [✅] ──> B2 [🔴] ──> B3 [🟡] ──> B4 [🟡] ──> B5 [�
 - [x] **B2** Authoritative PHP price engine ⛔ — 🔴
 - [x] **B3** Conditional show/hide logic — 🟡
 - [x] **B4** Multi-step mobile-first form + shortcode — 🟡
-- [ ] **B5** Secure submission handler (recalc + save + account opt-in + `qp_booking_created`) ⛔ — 🔴
+- [x] **B5** Secure submission handler (recalc + save + account opt-in + `qp_booking_created`) ⛔ — 🔴
 - [ ] **B6** Front-end JS (live preview mirror + wizard + lead capture) — 🟡
 - [ ] **B7** Consent-gated lead handler — 🟡
 - [ ] 🏁 **CHECKPOINT** Quote engine complete → Tag `v0.5.0-quote-engine`
@@ -265,12 +266,13 @@ Before committing and declaring any part "Done":
 - **v0.2.0-dev** — Canonical field contract (B0), module assets enqueue (B1), Git integration (G0), and pricing metadata settings (B-META) complete.
 - **v0.3.0-dev** — Authoritative server-side price calculation engine (B2) and field show/hide conditional logic evaluator (B3).
 - **v0.4.0-dev** — Mobile-first multi-step quote form CPT selectors, enqueued styles and shortcode templates (B4).
+- **v0.4.1-dev** — Secure submission handler (B5): server-side recalc + booking/items persistence, consent proof, account opt-in, `qp_booking_created` integration seam. Verified 16/16 end-to-end against the live DB.
 
 ---
 
 ## ▶️ Resume Here
 
-**Next Action:** Run **B5 (Secure submission handler)** on **🔴 Opus**.
-**Last completed & tested:** B4 — Multi-step mobile-first form and shortcode implemented and verified with local test renderings.
-**Waiting on me:** Initiate implementation of the secure submission handler and booking/account creation pipeline (B5).
-**Review checkpoints ahead:** B5, C5, D2 — paste output to Claude before proceeding.
+**Next Action:** Run **B6 (Front-end JS — live preview mirror + wizard + lead capture)** on **🟡 Pro**.
+**Last completed & tested:** B5 — Secure submission handler. Verified end-to-end on the live Local DB (16/16 assertions): price integrity (stored == engine, browser total ignored), hidden-field exclusion, guest vs account-opt-in, coupon increment + invalid-coupon rejection, `qp_booking_created` fires.
+**Waiting on me:** Build B6 front-end JS, then B7 lead handler → reach the `v0.5.0-quote-engine` checkpoint.
+**Review checkpoints ahead:** C5, D2 — paste output to Claude before proceeding.
