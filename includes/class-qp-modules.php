@@ -50,6 +50,14 @@ if ( ! class_exists( 'QP_Modules' ) ) :
 				QP_Quote::init();
 			}
 
+			/*--------------------------------------------------------------
+			 * Customer Accounts & Dashboard module.
+			 *------------------------------------------------------------*/
+			if ( ! empty( $enabled_modules['customer_dashboard'] ) ) {
+				require_once QP_PLUGIN_DIR . 'modules/accounts/class-qp-accounts.php';
+				QP_Accounts::init();
+			}
+
 			/*
 			 * Future module loading:
 			 *
