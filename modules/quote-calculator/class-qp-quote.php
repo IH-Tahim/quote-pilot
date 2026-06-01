@@ -68,6 +68,10 @@ if ( ! class_exists( 'QP_Quote' ) ) :
 			// Load and register the secure submission handler (B5)
 			require_once QP_PLUGIN_DIR . 'modules/quote-calculator/class-qp-submission.php';
 			QP_Submission::register();
+
+			// Load and register the lead handler (B7)
+			require_once QP_PLUGIN_DIR . 'modules/quote-calculator/class-qp-leads.php';
+			QP_Leads::register();
 		}
 
 		/**

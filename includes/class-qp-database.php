@@ -435,6 +435,24 @@ if ( ! class_exists( 'QP_Database' ) ) :
 			return false !== $result;
 		}
 
+		/**
+		 * Fetch a lead by email.
+		 *
+		 * @param string $email Lead email.
+		 * @return object|null
+		 */
+		public static function get_lead_by_email( $email ) {
+			global $wpdb;
+
+			$table = self::leads();
+
+			// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- table name is internal, value is prepared.
+			return $wpdb->get_row(
+				$wpdb->prepare( "SELECT * FROM {$table} WHERE email = %s LIMIT 1", $email )
+			);
+		}
+
+
 		/*--------------------------------------------------------------
 		 * Date rules
 		 *------------------------------------------------------------*/
