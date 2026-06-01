@@ -1,0 +1,1479 @@
+# Copyright (C) 2026 Imam Hasan (Tahim)
+# This file is distributed under the same license as the QuotePilot plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: QuotePilot 1.0.0\n"
+"Report-Msgid-Bugs-To: https://ihtahim.com\n"
+"Last-Translator: Imam Hasan <hasan@example.com>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-01 12:42:+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: QuotePilot POT Generator\n"
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:62
+msgid "QuotePilot Bookings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:63
+msgid "QuotePilot"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:73
+msgid "Bookings List"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:74
+msgid "Bookings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:82, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:83
+msgid "Date Rules"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:91
+msgid "Coupon Management"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:92
+msgid "Coupons"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:100, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:135
+msgid "Branding Colors & Fonts"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:101
+msgid "Branding"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:109, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:193
+msgid "QuotePilot Settings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-admin.php:110
+msgid "Settings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:48, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:60, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:44, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:86, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:101, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:43, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:76, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:61, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\class-qp-dashboard.php:56, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:44
+msgid "Security check failed."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:52
+msgid "You do not have permission to manage bookings."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:104
+msgid "QuotePilot Bookings & Quotes"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:111
+msgid "Search Bookings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:148, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:244, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:374
+msgid "Booking not found."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:157, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:433, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:188, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\notifications\class-qp-email.php:75, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\notifications\class-qp-whatsapp.php:50
+msgid "Cleaning Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:164
+msgid "Booking Details — #%s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:165
+msgid "Back to Bookings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:169
+msgid "Booking updated successfully."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:177
+msgid "Customer & Schedule Information"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:181
+msgid "Customer Name"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:185, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:213, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:66, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:101
+msgid "Email Address"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:223
+msgid "Itemised Price Breakdown"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:228
+msgid "Item Description"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:229
+msgid "Type"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:230
+msgid "Qty"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:231
+msgid "Unit Price"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:232
+msgid "Line Total"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:256
+msgid "No items recorded."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:262
+msgid "Authoritative Total Price:"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:276
+msgid "Status & Assignment"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:283, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:344
+msgid "Booking Status"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:285
+msgid "Pending Review"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:286
+msgid "Confirmed / Scheduled"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:287
+msgid "Completed"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:288
+msgid "Cancelled"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:293
+msgid "Assigned Cleaner"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:298
+msgid "Internal Admin Notes"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:302
+msgid "Update Booking Settings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:338
+msgid "ID"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:339, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\class-qp-activator.php:184
+msgid "Customer"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:340, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:52, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:50
+msgid "Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:341, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:176
+msgid "Preferred Date"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:342, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:278
+msgid "Total Price"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:343
+msgid "Payment"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:394
+msgid "All Bookings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-bookings-list.php:466
+msgid "View details"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:64
+msgid "You do not have permission to manage branding."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:136
+msgid "Customize the look and feel of your quote forms and customer dashboard."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:140
+msgid "Branding preferences updated."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:148
+msgid "Style Customizer"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:152
+msgid "Primary Brand Color"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:158
+msgid "Secondary Accent Color"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:166
+msgid "Typography Font Stack"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:169
+msgid "Default System Fonts (Fastest)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:179
+msgid "Business Brand Logo"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:182
+msgid "Choose/Upload Logo"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:183
+msgid "Select your brand logo using the WordPress media library."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:195
+msgid "Save Branding overrides"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-branding.php:214
+msgid "Select Brand Logo Logo"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:138
+msgid "Coupon Code Management"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:139
+msgid "Configure discount codes and usage limits to encourage bookings or run campaigns."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:146
+msgid "Coupon code created successfully."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:148
+msgid "Coupon deleted successfully."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:150
+msgid "Coupon active status toggled."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:160
+msgid "Error: An active coupon with this identical code already exists."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:162
+msgid "Error: Code name is required."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:173
+msgid "Create Discount Coupon"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:179, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:194
+msgid "Coupon Code"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:184
+msgid "Discount Mode"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:186, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:682, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:777
+msgid "Percentage (%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:187, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:329
+msgid "Flat Amount"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:192
+msgid "Discount Value"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:197
+msgid "Usage Limit"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:199
+msgid "0 = unlimited uses total."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:203
+msgid "Expiration Date (Optional)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:211
+msgid "Enable Coupon Immediately"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:215
+msgid "Save Coupon Code"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:224
+msgid "Configured Discount Codes"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:229
+msgid "Code"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:230
+msgid "Discount Type"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:231
+msgid "Usage Stats"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:232
+msgid "Expires At"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:233
+msgid "Status"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:234, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:186
+msgid "Actions"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:262
+msgid "unlimited"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:263
+msgid "%1$d / %2$s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:269
+msgid "Never"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:277
+msgid "ACTIVE"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:279
+msgid "DISABLED"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:283
+msgid "Toggle"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:284
+msgid "Are you sure you want to delete this coupon?"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:284, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:221
+msgid "Delete"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-coupons-admin.php:290
+msgid "No promotional coupons configured."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:106
+msgid "Date Rules Calendar & Closed Days"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:107
+msgid "Block off dates from booking or configure high-rate seasonal surcharges for specific calendar days."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:114
+msgid "Date rule added successfully."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:116
+msgid "Date rule deleted."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:123
+msgid "Please select a valid date."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:131
+msgid "Add Custom Calendar Rule"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:137
+msgid "Select Calendar Date"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:142, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:183
+msgid "Rule Type"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:144
+msgid "Closed (Block booking entirely)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:145
+msgid "High Rate (Surcharge adjustment)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:151
+msgid "Surcharge Mode"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:153
+msgid "Flat Value"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:154
+msgid "Percentage of Quote Base"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:158, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:335
+msgid "Surcharge Value"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:164, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:185
+msgid "Note / Reason"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:168
+msgid "Add Calendar Rule"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:177
+msgid "Configured Calendar Rules"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:182
+msgid "Date"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:184
+msgid "Adjustment"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:201
+msgid "CLOSED"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:203
+msgid "HIGH RATE"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:221
+msgid "Are you sure you want to delete this rule?"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-date-rules-admin.php:227
+msgid "No custom calendar rules configured."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:65
+msgid "You do not have permission to manage options."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:197
+msgid "Settings saved successfully."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:206
+msgid "Enabled Features & Modules"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:207
+msgid "Toggle QuotePilot modules. Features that are disabled will not load resources on your site."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:210
+msgid "Core Clean Services CPT"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:214
+msgid "Clean Services Catalog"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:219
+msgid "Instant Quote Calculator"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:223
+msgid "Interactive Quote Form Shortcode [quotepilot_form]"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:228
+msgid "Customer Accounts Portal"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:232
+msgid "Shortcode Dashboard [quotepilot_dashboard]"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:237
+msgid "Consent-Gated Lead Capture"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:241
+msgid "Capture partial abandoned quotes silently on consent ticked"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:246
+msgid "Coupons & Discounts"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:250
+msgid "Support promotional discount code inputs"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:255
+msgid "Date-Specific Surcharges"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:259
+msgid "Configure high-rate or closed date rules"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:264
+msgid "Payments Integrations"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:268
+msgid "Integrate Stripe and PayPal payments"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:273
+msgid "Integrations & Webhooks"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:277
+msgid "Outgoing webhooks and email/WhatsApp alert integrations"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:286
+msgid "Pricing, Tax & Currency Settings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:289
+msgid "Currency Symbol"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:295
+msgid "GST / Tax Enable"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:299
+msgid "Add tax to clean quotes automatically"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:304
+msgid "Tax Rate (%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:314
+msgid "Priority Dispatch / Emergency Surcharges"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:317
+msgid "Enable Emergency Surcharges"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:321
+msgid "Add option for urgent prioritized cleaning booking"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:326
+msgid "Surcharge Type"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:330
+msgid "Percentage of Base"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:345
+msgid "Customer Consent Policy Configuration"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:348
+msgid "Consent Area Layout Mode"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:351
+msgid "Merged Mode (Single terms + privacy checkbox)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:352
+msgid "Split Mode (Individually checked terms, privacy, & marketing)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:357
+msgid "Terms & Conditions URL"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:363
+msgid "Privacy Policy URL"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:373
+msgid "Payment Gateway & Deposit Configuration"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:376
+msgid "Payment Allocation"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:379
+msgid "Pay after clean (Cash/Invoice)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:380
+msgid "Require 50% Deposit upfront"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:381
+msgid "Require 100% Full Payment upfront"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:386
+msgid "Currency Code (ISO 4217)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:389
+msgid "3-letter code (e.g. USD, GBP, EUR, AUD). Used by Stripe & PayPal. Leave blank to auto-detect from symbol."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:394
+msgid "Stripe"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:397
+msgid "Publishable Key"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:403
+msgid "Secret Key"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:409
+msgid "Webhook Signing Secret"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:416
+msgid "Starts with whsec_. Set your Stripe webhook endpoint to: %s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:425
+msgid "PayPal"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:428
+msgid "Environment"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:431
+msgid "Sandbox (Testing)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:432
+msgid "Live (Production)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:437
+msgid "Client ID"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:443
+msgid "Client Secret"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:449
+msgid "Webhook ID"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:456
+msgid "From your PayPal Developer Dashboard. Set webhook URL to: %s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:468
+msgid "Uninstall Preferences"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:471
+msgid "Delete Data on Uninstall"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:475
+msgid "Warning: checking this will drop all 5 custom QuotePilot tables and options permanently on plugin delete."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\admin\class-qp-settings.php:483
+msgid "Save Settings"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:63, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:995
+msgid "Square Footage"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:70, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:996
+msgid "Bedrooms"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:77, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:997
+msgid "Bathrooms"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:84
+msgid "Extra Bathrooms"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:91, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:164
+msgid "Living Rooms"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:98
+msgid "Building Stories"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:106
+msgid "Room Size Tier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:114
+msgid "Living Room Size Tier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:126
+msgid "Number of Ovens"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:133
+msgid "Oven Size"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:145
+msgid "Add-ons (flat price)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:153
+msgid "Add-ons (percentage)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:165
+msgid "Emergency / Same-day Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:183
+msgid "Preferred Time"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:206, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:96
+msgid "Full Name"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:220
+msgid "Phone Number"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:227
+msgid "Service Address"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:239, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-quote.php:260
+msgid "I agree to the Privacy Policy"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:246, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-quote.php:264
+msgid "I accept the Terms & Conditions"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:253, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-quote.php:268
+msgid "I would like to receive offers and updates"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:260
+msgid "I agree to the Privacy Policy and Terms & Conditions"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:271
+msgid "Create an account for faster booking"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\includes\qp-field-keys.php:278, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:71
+msgid "Password"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\class-qp-dashboard.php:72
+msgid "Please enter both your email/username and password."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\class-qp-dashboard.php:101
+msgid "All fields are required."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\class-qp-dashboard.php:106, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:109
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\class-qp-dashboard.php:111
+msgid "Passwords do not match."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\class-qp-dashboard.php:116
+msgid "An account with this email already exists. Please log in."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:20
+msgid "Welcome back! You have successfully logged in."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:22
+msgid "Thank you for registering! Your account is ready."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:38, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:84
+msgid "Sign In"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:41, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:116
+msgid "Create Account"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:63
+msgid "Sign in to view your booking history, track quotes, and manage your clean schedule."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:67, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:102, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:395
+msgid "name@domain.com"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:72
+msgid "Enter your password..."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:79
+msgid "Remember me"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:93
+msgid "Create an account to track your orders, link past quotes, and speed up future bookings."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:97
+msgid "First & last name"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:106
+msgid "Choose Password"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:107, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:449
+msgid "Choose a secure password..."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:111
+msgid "Confirm Password"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:112
+msgid "Repeat password..."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:152
+msgid "Hello, %s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:158
+msgid "Logout"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:168
+msgid "Your Bookings & Quotes"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:180
+msgid "You have no quotes or bookings yet."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:182
+msgid "Get Your First Quote"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:232
+msgid "Name:"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:233
+msgid "Phone:"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:236
+msgid "Address:"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\accounts\views\dashboard.php:241
+msgid "Pricing Details"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\notifications\class-qp-email.php:95
+msgid "Booking Confirmation — #%s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\notifications\class-qp-email.php:116
+msgid "[QuotePilot Alert] New Booking — #%s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\notifications\class-qp-whatsapp.php:59
+msgid "Hello, I'd like to confirm my QuotePilot Booking!\\n\\nDetails:\\n- Booking ID: #%1$d\\n- Customer: %2$s\\n- Service: %3$s\\n- Date: %4$s\\n- Time: %5$s\\n- Total: %6$s\\n\\nThank you!"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:218
+msgid "Session expired. Please refresh and try again."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:231
+msgid "Booking ID is required."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:254
+msgid "This booking has already been paid."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:270
+msgid "No payment gateway is configured. Please contact the site owner."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:285
+msgid "No payment is required for this booking."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:364
+msgid "Invalid payment return. Please contact support."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:365, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-payments.php:375
+msgid "Payment Error"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:76
+msgid "PayPal credentials are not configured."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:96
+msgid "Unable to authenticate with PayPal. Please try again."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:108
+msgid "PayPal authentication failed. Please check your credentials."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:152, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-stripe.php:72
+msgid "QuotePilot Booking #%d"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:187
+msgid "Unable to connect to PayPal. Please try again."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:199
+msgid "PayPal returned an error. Please try again or contact support."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:217
+msgid "PayPal did not return an approval URL."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:272
+msgid "Failed to capture PayPal payment. Please contact support."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-paypal.php:294
+msgid "PayPal capture failed."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-stripe.php:58
+msgid "Stripe secret key is not configured."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-stripe.php:97
+msgid "Unable to connect to the payment gateway. Please try again."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\payments\class-qp-stripe.php:109
+msgid "Payment gateway returned an error. Please try again or contact support."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:51
+msgid "PII not stored without explicit consent."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:59
+msgid "Email is required."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:106
+msgid "Lead updated."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:108
+msgid "Lead already converted."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:112
+msgid "Lead captured."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-leads.php:115
+msgid "Database layer missing."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:45
+msgid "Base Price"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:67
+msgid "Square Footage Surcharge"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:83
+msgid "Bedrooms (%s)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:104
+msgid "First Bathroom (%s)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:119, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:133
+msgid "Additional Bathrooms (%s)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:182
+msgid "Building Stories Surcharge"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:205
+msgid "Oven Cleaning (%s)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:233
+msgid "Add-on: %s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:260
+msgid "Add-on: %s (%s%%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:282
+msgid "Emergency Surcharge"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:301
+msgid "Peak Date Surcharge (%s)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:323
+msgid "Emergency Surcharge (%s%%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:339
+msgid "Peak Date Surcharge (%s%%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:391
+msgid "Discount: Coupon %s"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:403
+msgid "Discount: Coupon %s (%s%%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-price-engine.php:432
+msgid "GST / Tax (%s%%)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:54
+msgid "Your session has expired. Please refresh the page and try again."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:72
+msgid "Quotes are temporarily unavailable. Please try again later."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:85
+msgid "Please choose a valid service."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:96
+msgid "The selected service is not currently available."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:120
+msgid "Please enter your name."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:137
+msgid "Please agree to the required terms before submitting."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:162
+msgid "The coupon code you entered is not valid."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\class-qp-submission.php:204
+msgid "We could not save your quote. Please try again."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:72
+msgid "Select Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:79
+msgid "Service Selection"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:80
+msgid "Choose the cleaning service that best fits your needs."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:102
+msgid "Starts from"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:111
+msgid "No active services configured yet. Please configure services in the admin panel."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:117
+msgid "Property Details"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:118
+msgid "Tell us a bit about your property for an accurate calculation."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:130
+msgid "e.g. 1500"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:133
+msgid "sqft"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:258
+msgid "Extras & Add-ons"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:259
+msgid "Choose additional items or custom options to add to your service."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:298
+msgid "Choose Extra Services"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:301
+msgid "Add-ons will be listed here based on your selected service."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:307
+msgid "Scheduling & Promotions"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:308
+msgid "Select your preferred date/time slot and apply promotional coupons."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:327
+msgid "Select a slot..."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:349
+msgid "Request same-day priority service dispatch (surcharges apply)."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:362
+msgid "ENTER CODE"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:365
+msgid "Apply"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:372
+msgid "Booking & Account Info"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:373
+msgid "Complete your booking details and manage your account settings."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:382
+msgid "Your name"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:406
+msgid "Phone number"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:419
+msgid "Full address with unit number..."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:473
+msgid "I agree to the <a href=\"%1$s\" target=\"_blank\">Terms & Conditions</a> and <a href=\"%2$s\" target=\"_blank\">Privacy Policy</a>."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:498
+msgid "I accept the <a href=\"%1$s\" target=\"_blank\">Terms & Conditions</a>."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:521
+msgid "I agree to the <a href=\"%1$s\" target=\"_blank\">Privacy Policy</a>."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:540
+msgid "I would like to receive special offers, recovery deals, and clean reminders."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:556
+msgid "No Service Selected"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:559
+msgid "est. total"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\quote-calculator\views\form.php:567
+msgid "Next"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:49
+msgid "QuotePilot Services"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:51
+msgid "Add New"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:52
+msgid "Add New Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:53
+msgid "New Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:54
+msgid "Edit Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:55
+msgid "View Service"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:56
+msgid "All Services"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:57
+msgid "Search Services"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:58
+msgid "No services found."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:59
+msgid "No services found in Trash."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:60
+msgid "Service Archives"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:61
+msgid "Filter services list"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:62
+msgid "Services list navigation"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:63
+msgid "Services list"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-cpt.php:68
+msgid "Cleaning services offered for instant quoting."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:85
+msgid "Pricing Configuration"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:277, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:987
+msgid "Base Price ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:298
+msgid "Service is selectable in quotes"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:304
+msgid "Calculated Property Rules & Multipliers"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:318
+msgid "Enable Square Footage Pricing"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:325, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:988
+msgid "Price per Sq Ft ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:351
+msgid "Enable Bedroom Pricing"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:358, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:989
+msgid "Price per Bedroom ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:384
+msgid "Enable Bathroom Pricing"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:391
+msgid "Price per First Bathroom ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:402, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:991
+msgid "Price per Extra Bathroom ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:421
+msgid "Standard Room Size Multipliers"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:424
+msgid "Multipliers applied to bedroom & bathroom charges based on client room size selections."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:428, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:509
+msgid "Small Size Multiplier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:438, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:519
+msgid "Medium Size Multiplier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:448, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:529
+msgid "Large Size Multiplier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:473
+msgid "Enable Living Room Pricing"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:480, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:992
+msgid "Price per Living Room ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:503
+msgid "Apply custom size multipliers for living rooms"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:556
+msgid "Enable Story / Floors Surcharge"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:563
+msgid "Surcharge per additional floor ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:589
+msgid "Enable Oven Cleaning"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:596, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:994
+msgid "Price per Oven ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:607
+msgid "Large Oven Size Multiplier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:633
+msgid "Enable Service Add-ons"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:639
+msgid "Define additional options or upsells custom to this service."
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:645
+msgid "Slug / Identifier"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:646
+msgid "Display Label"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:647
+msgid "Charge Type"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:648
+msgid "Rate / Value"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:681, C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:776
+msgid "Flat Price ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:713
+msgid "Add Add-on Row"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:990
+msgid "Price per Bathroom ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:993
+msgid "Price per Floor / Story Surcharge ($)"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:998
+msgid "Living Room"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:999
+msgid "Stories / Floors"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:1000
+msgid "Oven Cleaning"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:1001
+msgid "Add-ons"
+msgstr ""
+
+#: C:/Users/Tahim/Local Sites/quotepilot-dev/app/public/wp-content/plugins/quote-pilot\modules\services\class-qp-services-meta.php:1002
+msgid "Active"
+msgstr ""
+

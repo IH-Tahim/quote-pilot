@@ -88,7 +88,7 @@ B-META [✅] ──> B2 [🔴] ──> B3 [🟡] ──> B4 [🟡] ──> B5 [�
 - [x] **C3** Date-rules calendar + coupons admin — 🟢
 - [x] **C4** Notifications: email + WhatsApp click-to-chat + webhook/Mailchimp/Brevo — 🟡
 - [x] **C5** Payments: optional Stripe/PayPal, deposit modes, verified webhooks ⛔ — 🔴
-- [ ] **D1** Readme.txt + i18n .pot + safe uninstall ⫶ — 🟢 *(Parallel-safe)*
+- [x] **D1** Readme.txt + i18n .pot + safe uninstall ⫶ — 🟢 *(Parallel-safe)*
 - [ ] **D2** Final audit (security + performance + WP.org compliance) ⛔ — 🔴
 - [ ] 🏁 **RELEASE** → Tag `v1.0.0`, submit to WordPress.org
 
@@ -272,12 +272,13 @@ Before committing and declaring any part "Done":
 - **v0.5.0-quote-engine** — Consent-gated partial lead capture (B7) with custom db upserts and booking convert flipping hooks. Wired and tagged primary milestone checkpoint.
 - **v0.6.0-dev** — Customer accounts registration/login & linking linkage (C1), Admin options settings screens & list-tables (C2), Surcharge calendar & coupon rules CRUD (C3), Outbound transactional emails, wa.me links, & Mailchimp CRM webhooks (C4).
 - **v0.7.0-dev** — Optional payments module (C5): Stripe Checkout Sessions + PayPal Orders API v2 via raw REST calls (zero SDK dependencies). Payment router with deposit modes (full/half/pay-after), HMAC-SHA256 Stripe webhook verification, PayPal server-side webhook verification API, idempotent payment recording, sandbox/live toggle, and currency code mapping. Settings page extended with webhook secrets and PayPal environment toggle. Submission handler updated with payment mode alias normalisation and gateway availability in responses. Verified 42/42 CLI assertions: amount computation, mode normalisation, gateway detection, needs_payment logic, idempotent recording, Stripe signature verification (valid + tampered + wrong-secret + stale + empty), and currency unit conversion.
+- **v0.8.0-dev** — WP.org submission housekeeping (D1): Created standardized readme.txt containing installation steps, screenshots list, changelogs, and answers to frequently asked questions. Compiled translation template languages/quote-pilot.pot recursively parsing 366 unique translatable strings with the 'quote-pilot' text-domain. Hardened uninstall.php with an explicit ABSPATH security guard alongside standard WP_UNINSTALL_PLUGIN checks.
 
 ---
 
 ## ▶️ Resume Here
 
-**Next Action:** Run **D1 (Readme, i18n .pot, Uninstall)** on **🟢 Fast** and then **D2 (Final Audit)** on **🔴 Opus**.
-**Last completed & tested:** C5 — Optional payments module with Stripe Checkout Sessions, PayPal Orders API v2, webhook signature verification, idempotent recording, and settings page extensions. All verified using 42-assertion CLI test suite.
-**Waiting on me:** Build D1 readme/i18n/uninstall scaffolding, then D2 final security+performance audit.
+**Next Action:** Run **D2 (Final Audit)** on **🔴 Opus**.
+**Last completed & tested:** D1 — WP.org submission package: readme.txt, 366-string POT translation template generator, and safe ABSPATH-guarded uninstall.php.
+**Waiting on me:** D2 final pre-release security + performance + WP.org compliance audit.
 **Review checkpoints ahead:** D2 — paste output to Claude before tagging v1.0.0.
