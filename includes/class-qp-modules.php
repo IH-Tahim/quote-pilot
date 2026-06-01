@@ -58,6 +58,14 @@ if ( ! class_exists( 'QP_Modules' ) ) :
 				QP_Accounts::init();
 			}
 
+			/*--------------------------------------------------------------
+			 * Notifications & Webhooks module.
+			 *------------------------------------------------------------*/
+			if ( ! empty( $enabled_modules['email_notifications'] ) ) {
+				require_once QP_PLUGIN_DIR . 'modules/notifications/class-qp-notifications.php';
+				QP_Notifications::init();
+			}
+
 			/*
 			 * Future module loading:
 			 *
