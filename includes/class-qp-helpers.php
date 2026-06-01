@@ -66,6 +66,17 @@ if ( ! class_exists( 'QP_Helpers' ) ) :
 				return $settings[ $key ];
 			}
 
+			if ( null === $default ) {
+				$fallbacks = array(
+					'emergency_surcharge_enabled' => false,
+					'emergency_surcharge_type'    => 'flat',
+					'emergency_surcharge_value'   => 0,
+				);
+				if ( isset( $fallbacks[ $key ] ) ) {
+					return $fallbacks[ $key ];
+				}
+			}
+
 			return $default;
 		}
 

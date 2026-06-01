@@ -195,11 +195,14 @@ if ( ! class_exists( 'QP_Activator' ) ) :
 		 */
 		private static function create_default_settings() {
 			$defaults = array(
-				'tax_rate'                   => 10,
-				'tax_enabled'                => false,
-				'currency_symbol'            => '$',
-				'qp_delete_data_on_uninstall' => false,
-				'enabled_modules'            => array(
+				'tax_rate'                    => 10,
+				'tax_enabled'                 => false,
+				'currency_symbol'             => '$',
+				'qp_delete_data_on_uninstall'  => false,
+				'emergency_surcharge_enabled' => false,
+				'emergency_surcharge_type'    => 'flat',
+				'emergency_surcharge_value'   => 0,
+				'enabled_modules'             => array(
 					'services'         => true,
 					'quote_calculator' => false,
 					'booking_manager'  => false,

@@ -71,29 +71,28 @@ if ( ! class_exists( 'QP_Fields' ) ) :
 					'input_type'       => 'number',
 					'sanitize'         => 'abs_int',
 					'pricing_role'     => 'multiplier',
-					'service_meta_key' => 'price_per_bedroom',
+					'service_meta_key' => 'price_per_bedroom', // Affected by room_size_multipliers scaling
 				),
 				'bathrooms'         => array(
 					'label'            => __( 'Bathrooms', 'quote-pilot' ),
 					'input_type'       => 'number',
 					'sanitize'         => 'abs_int',
 					'pricing_role'     => 'multiplier',
-					'service_meta_key' => 'price_per_bathroom',
+					'service_meta_key' => 'price_per_bathroom', // Affected by room_size_multipliers scaling
 				),
 				'extra_bathrooms'   => array(
 					'label'            => __( 'Extra Bathrooms', 'quote-pilot' ),
 					'input_type'       => 'number',
 					'sanitize'         => 'abs_int',
 					'pricing_role'     => 'multiplier',
-					'service_meta_key' => 'price_per_extra_bathroom',
+					'service_meta_key' => 'price_per_extra_bathroom', // Affected by room_size_multipliers scaling
 				),
 				'living_rooms'      => array(
 					'label'            => __( 'Living Rooms', 'quote-pilot' ),
 					'input_type'       => 'number',
 					'sanitize'         => 'abs_int',
 					'pricing_role'     => 'multiplier',
-					// NOTE: meta box does not yet save this key. See B0 gaps.
-					'service_meta_key' => 'price_per_living_room',
+					'service_meta_key' => 'price_per_living_room', // Affected by living_room_size_multipliers scaling
 				),
 				'stories'           => array(
 					'label'            => __( 'Building Stories', 'quote-pilot' ),
@@ -101,7 +100,6 @@ if ( ! class_exists( 'QP_Fields' ) ) :
 					'sanitize'         => 'abs_int',
 					'pricing_role'     => 'multiplier',
 					'options'          => array( '1', '2', '3' ),
-					// NOTE: meta box does not yet save this key. See B0 gaps.
 					'service_meta_key' => 'price_per_story',
 				),
 
@@ -121,8 +119,7 @@ if ( ! class_exists( 'QP_Fields' ) ) :
 					'sanitize'         => 'text',
 					'pricing_role'     => 'multiplier',
 					'options'          => array( 'standard', 'large' ),
-					// NOTE: no size-modifier meta yet. See B0 gaps.
-					'service_meta_key' => null,
+					'service_meta_key' => 'oven_size_large_multiplier', // Multiplier-meta driven (default 1.5)
 				),
 
 				/*------------------------------------------------------
@@ -134,8 +131,7 @@ if ( ! class_exists( 'QP_Fields' ) ) :
 					'sanitize'         => 'slug',
 					'pricing_role'     => 'addon_flat',
 					'multiple'         => true,
-					// NOTE: needs a per-service add-on definitions meta. See B0 gaps.
-					'service_meta_key' => null,
+					'service_meta_key' => 'addons',
 				),
 				'addons_percent'    => array(
 					'label'            => __( 'Add-ons (percentage)', 'quote-pilot' ),
@@ -143,8 +139,7 @@ if ( ! class_exists( 'QP_Fields' ) ) :
 					'sanitize'         => 'slug',
 					'pricing_role'     => 'addon_percent',
 					'multiple'         => true,
-					// NOTE: needs a per-service add-on definitions meta. See B0 gaps.
-					'service_meta_key' => null,
+					'service_meta_key' => 'addons',
 				),
 
 				/*------------------------------------------------------
