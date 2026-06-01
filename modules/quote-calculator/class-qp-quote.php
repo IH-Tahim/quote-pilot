@@ -98,6 +98,26 @@ if ( ! class_exists( 'QP_Quote' ) ) :
 				true
 			);
 
+			/* Wizard nav + AJAX submit — depends on calculator (QPRecalculate) */
+			wp_enqueue_script(
+				'qp-form-wizard',
+				QP_PLUGIN_URL . 'public/js/form-wizard.js',
+				array( 'qp-quote-calculator' ),
+				QP_VERSION,
+				true
+			);
+
+			/* Consent-gated lead capture — depends on calculator (QPCurrentInput) */
+			wp_enqueue_script(
+				'qp-lead-capture',
+				QP_PLUGIN_URL . 'public/js/lead-capture.js',
+				array( 'qp-quote-calculator' ),
+				QP_VERSION,
+				true
+			);
+
+			/* QPData injected on the first (calculator) script; subsequent scripts
+			 * share the same global so no duplicate localization is needed. */
 			wp_localize_script( 'qp-quote-calculator', 'QPData', $this->get_localized_data() );
 		}
 
